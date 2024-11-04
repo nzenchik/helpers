@@ -1,0 +1,6 @@
+# blockNumber
+curl localhost:8545 -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":67}'
+# syncing
+curl localhost:8545 -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":67}'
+# debug traceTransactio
+curl localhost:8545 -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"debug_traceTransaction","params":["tx_hash",{"tracer": "callTracer"}],"id":67}'
