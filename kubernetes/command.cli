@@ -1,0 +1,3 @@
+#Get secret and decode
+
+kubectl get secrets -n namespace secret_name -o yaml|yq .data.field -r|base64 -d

@@ -1,0 +1,7 @@
+#Dump example
+
+pg_dump -U postgres -F t db_name > archive_name.tar
+
+#Restore
+
+pg_restore --dbname=$DB_NAME --format=t --single-transaction --no-owner "/${DB_TEMPLATE_NAME}" --schema='public' --clean --if-exists
