@@ -1,0 +1,3 @@
+## Unpack zstd archive
+
+tar --use-compress-program=zstd -xvf archive.tar.zst
