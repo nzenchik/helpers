@@ -1,3 +1,7 @@
 ## Unpack zstd archive
 
 tar --use-compress-program=zstd -xvf archive.tar.zst
+
+## Speed up mdadm rebuild
+
+sysctl -w dev.raid.speed_limit_max=2000000
